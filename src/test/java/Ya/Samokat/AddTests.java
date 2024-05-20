@@ -5,16 +5,10 @@ import Rules.BrowserRule;
 import Steps.Steps;
 import org.junit.Rule;
 import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.util.concurrent.TimeUnit;
 
 import static Utils.Utils.randomString;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertEquals;
-import static org.openqa.selenium.support.ui.ExpectedConditions.numberOfWindowsToBe;
 
 public class AddTests {
     private static final String NOT_EXISTING_ORDER_NUMBER = randomString();
