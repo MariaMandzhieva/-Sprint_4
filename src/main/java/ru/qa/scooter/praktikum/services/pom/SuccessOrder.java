@@ -8,11 +8,12 @@ public class SuccessOrder {
     private final By successOrderMessage = By.xpath(".//div[@class='Order_ModalHeader__3FDaJ' and text()='Заказ оформлен']");
 
     private final WebDriver webDriver;
+
     public SuccessOrder(WebDriver webDriver) {
         this.webDriver = webDriver;
     }
 
-    public By getSuccessOrderMessage(){
+    public By getSuccessOrderMessage() {
         return successOrderMessage;
     }
 }

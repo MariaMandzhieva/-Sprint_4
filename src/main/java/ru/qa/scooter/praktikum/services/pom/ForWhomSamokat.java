@@ -21,25 +21,32 @@ public class ForWhomSamokat {
     private final By buttonFurther = By.xpath(".//button[@class='Button_Button__ra12g Button_Middle__1CSJM']");
 
     private final WebDriver webDriver;
+
     public ForWhomSamokat(WebDriver webDriver) {
-        this.webDriver=webDriver;
+        this.webDriver = webDriver;
     }
-    public By getName(){
+
+    public By getName() {
         return name;
     }
-    public By getSurname(){
+
+    public By getSurname() {
         return surname;
     }
-    public By getAddress(){
+
+    public By getAddress() {
         return address;
     }
-    public By getMetro(){
+
+    public By getMetro() {
         return metro;
     }
-    public By getTel(){
+
+    public By getTel() {
         return tel;
     }
-    public By getButtonFurther(){
+
+    public By getButtonFurther() {
         return buttonFurther;
     }
 }

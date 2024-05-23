@@ -23,8 +23,9 @@ public class MainPage {
     private NotFound notFound;
 
     private final WebDriver webDriver;
+
     public MainPage(WebDriver webDriver) {
-        this.webDriver=webDriver;
+        this.webDriver = webDriver;
         notFound = new NotFound(webDriver);
     }
 
@@ -40,16 +41,19 @@ public class MainPage {
         return goButton;
     }
 
-    public By getTopOrderButton(){
+    public By getTopOrderButton() {
         return topOrderButton;
     }
-    public By getLogoSamokat(){
+
+    public By getLogoSamokat() {
         return logoSamokat;
     }
-    public By getHeaderQuestions(){
+
+    public By getHeaderQuestions() {
         return headerQuestions;
     }
-    public By getCookies(){
+
+    public By getCookies() {
         return cookies;
     }
 

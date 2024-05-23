@@ -37,22 +37,23 @@ public class OrderSamokat {
     private final String textComment;
     private final int plusDaysToDate;
     private final boolean isSuccessOrderMessageDisplayed;
-    public OrderSamokat(String orderButton, String name, String surname, String address, String metroStation, String tel, String rentalPeriod, String colour, String textComment, int plusDaysToDate, boolean isSuccessOrderMessageDisplayed){
-        this.orderButton=orderButton;
-        this.name=name;
-        this.surname=surname;
-        this.address=address;
-        this.metroStation=metroStation;
-        this.tel=tel;
-        this.rentalPeriod=rentalPeriod;
-        this.colour=colour;
-        this.textComment=textComment;
-        this.plusDaysToDate=plusDaysToDate;
-        this.isSuccessOrderMessageDisplayed=isSuccessOrderMessageDisplayed;
+
+    public OrderSamokat(String orderButton, String name, String surname, String address, String metroStation, String tel, String rentalPeriod, String colour, String textComment, int plusDaysToDate, boolean isSuccessOrderMessageDisplayed) {
+        this.orderButton = orderButton;
+        this.name = name;
+        this.surname = surname;
+        this.address = address;
+        this.metroStation = metroStation;
+        this.tel = tel;
+        this.rentalPeriod = rentalPeriod;
+        this.colour = colour;
+        this.textComment = textComment;
+        this.plusDaysToDate = plusDaysToDate;
+        this.isSuccessOrderMessageDisplayed = isSuccessOrderMessageDisplayed;
     }
 
     @Parameterized.Parameters
-    public static Object [] [] getOrderSamokat(){
+    public static Object[][] getOrderSamokat() {
         return new Object[][]{
                 {".//button[@class='Button_Button__ra12g' and text()='Заказать']", "Иван", "Иванов", "Лесная,5", ".//li[@data-value=93]", "89999999999", ".//div[@class='Dropdown-option' and text()='двое суток']", ".//label[@class='Checkbox_Label__3wxSf' and text()='чёрный жемчуг']", "Спасибо!", 1, true},
                 {".//button[@class='Button_Button__ra12g Button_Middle__1CSJM']", "Александра", "Александрова", "Парковая,12", ".//li[@data-value=51]", "89876543210", ".//div[@class='Dropdown-option' and text()='трое суток']", ".//label[@class='Checkbox_Label__3wxSf' and text()='серая безысходность']", "Привет!", 2, true},
@@ -68,7 +69,8 @@ public class OrderSamokat {
 
         // вырезка элемента Сookies, который перекрывает кнопку Далее
         WebElement elementCookie = browserRule.getWebDriver().findElement(mainPage.getCookies());
-        JavascriptExecutor js = (JavascriptExecutor) browserRule.getWebDriver();js.executeScript("arguments[0].remove();", elementCookie);
+        JavascriptExecutor js = (JavascriptExecutor) browserRule.getWebDriver();
+        js.executeScript("arguments[0].remove();", elementCookie);
 
         steps.click(By.xpath(orderButton));
 

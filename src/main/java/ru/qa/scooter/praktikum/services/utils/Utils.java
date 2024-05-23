@@ -14,8 +14,8 @@ public class Utils {
         int rightLimit = 122;
         StringBuilder buffer = new StringBuilder(length);
 
-        for(int i = 0; i < length; ++i) {
-            int randomLimitedInt = leftLimit + (int)(random.nextFloat() * (float)(rightLimit - leftLimit + 1));
+        for (int i = 0; i < length; ++i) {
+            int randomLimitedInt = leftLimit + (int) (random.nextFloat() * (float) (rightLimit - leftLimit + 1));
             buffer.append(Character.toChars(randomLimitedInt));
         }
 

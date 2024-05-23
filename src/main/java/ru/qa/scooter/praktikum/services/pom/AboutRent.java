@@ -11,17 +11,20 @@ public class AboutRent {
     private final By buttonOrder = By.xpath(".//button[@class='Button_Button__ra12g Button_Middle__1CSJM' and text()='Заказать']");
 
     private final WebDriver webDriver;
+
     public AboutRent(WebDriver webDriver) {
         this.webDriver = webDriver;
     }
 
-    public By getRentalPeriodField(){
+    public By getRentalPeriodField() {
         return rentalPeriodField;
     }
-    public By getComment(){
+
+    public By getComment() {
         return comment;
     }
-    public By getButtonOrder(){
+
+    public By getButtonOrder() {
         return buttonOrder;
     }
 

@@ -17,7 +17,7 @@ public class AddTests {
     public BrowserRule browserRule = new BrowserRule();
 
     @Test
-    public void MainPageIfClickLogoSamokat(){
+    public void MainPageIfClickLogoSamokat() {
         MainPage mainPage = new MainPage(browserRule.getWebDriver());
         Steps steps = new Steps(browserRule.getWebDriver());
 
@@ -31,7 +31,7 @@ public class AddTests {
     }
 
     @Test
-    public void notFoundIfOrderNotExists(){
+    public void notFoundIfOrderNotExists() {
         MainPage mainPage = new MainPage(browserRule.getWebDriver());
         Steps steps = new Steps(browserRule.getWebDriver());
 
