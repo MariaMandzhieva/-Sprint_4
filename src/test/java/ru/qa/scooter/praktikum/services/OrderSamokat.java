@@ -1,6 +1,6 @@
 package ru.qa.scooter.praktikum.services;
 
-import POM.*;
+import ru.qa.scooter.praktikum.services.pom.*;
 import ru.qa.scooter.praktikum.services.rules.BrowserRule;
 import ru.qa.scooter.praktikum.services.steps.Steps;
 import org.junit.Rule;
