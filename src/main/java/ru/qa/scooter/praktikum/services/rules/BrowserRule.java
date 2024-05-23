@@ -1,4 +1,4 @@
-package Rules;
+package ru.qa.scooter.praktikum.services.rules;
 
 import org.junit.rules.ExternalResource;
 import org.openqa.selenium.WebDriver;

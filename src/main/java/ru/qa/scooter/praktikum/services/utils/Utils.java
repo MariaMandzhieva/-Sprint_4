@@ -1,4 +1,4 @@
-package Utils;
+package ru.qa.scooter.praktikum.services.utils;
 
 import java.util.Random;
 

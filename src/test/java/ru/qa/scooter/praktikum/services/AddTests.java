@@ -1,12 +1,12 @@
-package Ya.Samokat;
+package ru.qa.scooter.praktikum.services;
 
-import POM.MainPage;
-import Rules.BrowserRule;
-import Steps.Steps;
+import ru.qa.scooter.praktikum.services.pom.MainPage;
+import ru.qa.scooter.praktikum.services.rules.BrowserRule;
+import ru.qa.scooter.praktikum.services.steps.Steps;
 import org.junit.Rule;
 import org.junit.Test;
 
-import static Utils.Utils.randomString;
+import static ru.qa.scooter.praktikum.services.utils.Utils.randomString;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertEquals;
 

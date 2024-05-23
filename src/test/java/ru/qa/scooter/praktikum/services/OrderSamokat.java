@@ -1,8 +1,8 @@
-package Ya.Samokat;
+package ru.qa.scooter.praktikum.services;
 
 import POM.*;
-import Rules.BrowserRule;
-import Steps.Steps;
+import ru.qa.scooter.praktikum.services.rules.BrowserRule;
+import ru.qa.scooter.praktikum.services.steps.Steps;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,6 +13,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import ru.qa.scooter.praktikum.services.pom.*;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

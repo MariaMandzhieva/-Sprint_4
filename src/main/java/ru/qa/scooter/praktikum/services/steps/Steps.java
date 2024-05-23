@@ -1,4 +1,4 @@
-package Steps;
+package ru.qa.scooter.praktikum.services.steps;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
