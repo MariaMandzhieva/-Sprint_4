@@ -1,5 +1,6 @@
 package ru.qa.scooter.praktikum.services;
 
+import org.openqa.selenium.By;
 import ru.qa.scooter.praktikum.services.pom.MainPage;
 import ru.qa.scooter.praktikum.services.rules.BrowserRule;
 import ru.qa.scooter.praktikum.services.steps.Steps;
@@ -22,7 +23,7 @@ public class AddTests {
         Steps steps = new Steps(browserRule.getWebDriver());
 
         steps.open(MainPage.URL)
-                .click(mainPage.getTopOrderButton())
+                .click(By.xpath(MainPage.getTopOrderButton()))
                 .click(mainPage.getLogoSamokat());
 
         String url = browserRule.getWebDriver().getCurrentUrl();

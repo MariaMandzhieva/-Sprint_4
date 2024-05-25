@@ -13,7 +13,9 @@ public class ForWhomSamokat {
     private final By address = By.xpath(".//input[@placeholder='* Адрес: куда привезти заказ']");
     // поле ввода Станции метро
     private final By metro = By.xpath(".//input[@placeholder='* Станция метро']");
-
+    // станции метро
+    private static final String babushkinskayaMetroStation = ".//li[@data-value=93]";
+    private static final String molodezhnayaMetroStation = ".//li[@data-value=51]";
     // поле ввода Телефон
     private final By tel = By.xpath(".//input[@placeholder='* Телефон: на него позвонит курьер']");
     //.//button[@class='Button_Button__ra12g Button_Middle__1CSJM']
@@ -40,6 +42,14 @@ public class ForWhomSamokat {
 
     public By getMetro() {
         return metro;
+    }
+
+    public static String getBabushkinskayaMetroStation(){
+        return babushkinskayaMetroStation;
+    }
+
+    public static String getMolodezhnayaMetroStation(){
+        return molodezhnayaMetroStation;
     }
 
     public By getTel() {

@@ -1,5 +1,6 @@
 package ru.qa.scooter.praktikum.services;
 
+import org.openqa.selenium.*;
 import ru.qa.scooter.praktikum.services.pom.*;
 import ru.qa.scooter.praktikum.services.rules.BrowserRule;
 import ru.qa.scooter.praktikum.services.steps.Steps;
@@ -7,13 +8,8 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import ru.qa.scooter.praktikum.services.pom.*;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -55,8 +51,8 @@ public class OrderSamokat {
     @Parameterized.Parameters
     public static Object[][] getOrderSamokat() {
         return new Object[][]{
-                {".//button[@class='Button_Button__ra12g' and text()='Заказать']", "Иван", "Иванов", "Лесная,5", ".//li[@data-value=93]", "89999999999", ".//div[@class='Dropdown-option' and text()='двое суток']", ".//label[@class='Checkbox_Label__3wxSf' and text()='чёрный жемчуг']", "Спасибо!", 1, true},
-                {".//button[@class='Button_Button__ra12g Button_Middle__1CSJM']", "Александра", "Александрова", "Парковая,12", ".//li[@data-value=51]", "89876543210", ".//div[@class='Dropdown-option' and text()='трое суток']", ".//label[@class='Checkbox_Label__3wxSf' and text()='серая безысходность']", "Привет!", 2, true},
+                {MainPage.getTopOrderButton(), "Иван", "Иванов", "Лесная,5", ForWhomSamokat.getBabushkinskayaMetroStation(), "89999999999", AboutRent.getTwoDays(), AboutRent.getBlackColour(), "Спасибо!", 1, true},
+                {MainPage.getBottomOrderButton(), "Александра", "Александрова", "Парковая,12", ForWhomSamokat.getMolodezhnayaMetroStation(), "89876543210", AboutRent.getThreeDays(), AboutRent.getGreyColour(), "Привет!", 2, true},
         };
     }
 
